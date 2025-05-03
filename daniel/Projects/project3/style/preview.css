@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*===================== Navbar ========================*/
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-left img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    font-family: verdana;
+    margin: 5px 0 0;
+    color: white;
+    font-size: 24px
+}
+
+.nav-left a:hover {
+    color: rgb(148, 150, 161);
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.nav-right a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/*===================== Opening Area ========================*/
+.opening-area {
+    display: flex;
+    background: url(../../../Assets/background_1.png) no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    align-items: top;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.opening-area-content {
+    padding: 30px;
+}
+
+.opening-area h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.opening-area p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.opening-area-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-style: solid none;
+    border-color: black;
+    margin: 0 auto;
+}
+
+.opening-area img {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.opening-area button {
+    padding: 8px 16px;
+    background-color: rgb(26, 26, 228);
+    color: white;
+    border: 2px solid #7dc6df;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    width: fit-content;
+    margin: 20px auto 0;
+    margin-bottom: 10px;
+}
+
+.opening-area button:hover {
+    background-color: rgb(15, 15, 124);
+    color: white;
+}
+
+/*===================== preview Area ========================*/
+
+.preview-area {
+    background: lightblue;
+}
+
+.preview-area img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*========================= lower area ====================================*/
+.lower-area-credit {
+    display: flex;
+    background-color: black;
+    color: white;
+    text-align: left;
+    flex-direction: column;
+    align-items: top;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.lower-area-credit p {
+    margin-left: 20px;
+}

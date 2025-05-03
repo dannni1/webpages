@@ -1,0 +1,100 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100vh;
+}
+
+.left{
+    background: url(../images/background.png) no-repeat center center;
+    background-size: cover;
+}
+
+.right {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    font-family: 'Heebo';
+}
+
+.right h1{
+    font: normal normal 900 43px/63px Heebo;
+    letter-spacing: 0px;
+}
+
+.right p{
+    font: normal normal normal 20px/29px Heebo;
+    letter-spacing: 0px;
+    max-width: 400px;
+}
+
+.wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.right label{
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+}
+
+.right input{
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    padding: 20px 0px 0px 15vh;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #020253;
+    font-size: 20px;
+    text-align: right;
+    direction: rtl;
+}
+
+.right button{
+    background: #020253 0% 0% no-repeat padding-box;
+    color: white;
+    padding: 10px;
+    margin-left: 75%;
+}
+
+/*media breakpoint at 800px:*/
+@media screen and (max-width: 800px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .right h1 {
+    font: normal normal 900 28px/41px Heebo;
+    }
+
+    .right p {
+    font: normal normal normal 15px/22px Heebo;
+    max-width: 300px;
+    }
+    .right input {
+    padding: 20px 0px 0px 10vh;
+    }
+
+    .right button {
+        margin-left: 0%;
+    }
+}

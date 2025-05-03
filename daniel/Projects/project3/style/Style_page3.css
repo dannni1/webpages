@@ -1,0 +1,135 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page h1 {
+    text-align: left;
+    font: normal normal normal 160px/231px Satisfy;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+    font-family: 'Satisfy';
+    margin: 0 auto;
+}
+
+.page p {
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+    font-family: 'Varela Round';
+    margin: 0 auto;
+}
+
+.p_1 {
+    text-align: right;
+    font: normal normal normal 32px/38px Varela Round;
+    padding-bottom: 15px;
+}
+
+.p_2 {
+    text-align: center;
+    font: normal normal normal 16px/20px Varela Round;
+    padding-bottom: 15px;
+}
+
+.wrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.page label {
+    text-align: right;
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+}
+
+.page input {
+    padding: 10px;
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+}
+
+.page button {
+    padding: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: none;
+    cursor: pointer;
+}
+
+/*media breakpoint at 800px:*/
+@media (max-width: 800px) {
+
+    .page h1 {
+        font: normal normal normal 60px/86px Satisfy;
+    }
+
+    .p_1{
+        font: normal normal normal 18px/22px Varela Round;
+    }
+
+    .p_2 {
+        font: normal normal normal 16px/20px Varela Round;
+        max-width: 80%;
+    }
+
+    .bottom-part {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .group {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: right;
+    }
+
+    .page button {
+        text-align: center;
+        font: normal normal normal 11px/13px Varela Round;
+        letter-spacing: 0px;
+        color: #2823FD;
+    }
+}

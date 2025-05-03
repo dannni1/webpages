@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*===================== Navbar ========================*/
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-left img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-left p {
+    font-family: verdana;
+    margin: 5px 0 0;
+    color: white;
+    font-size: 24px
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.nav-right a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/*===================== Opening Area ========================*/
+.opening-area {
+    display: flex;
+    background: url(../Assets/background_1.png) no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    align-items: top;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.opening-area-content {
+    padding: 30px;
+}
+
+.opening-area h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.opening-area p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.opening-area-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-style: solid none;
+    border-color: black;
+    margin: 0 auto;
+}
+
+.opening-area img {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/*======================== About Area ======================*/
+.about-area { 
+    display: flex;
+    align-items: top;
+    text-align: center;
+    flex-direction:column;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(221, 211, 211);
+}
+
+.about-area img {
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.about-area h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-area p {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-area button {
+    padding: 8px 16px;
+    background-color: rgb(26, 26, 228);
+    color: white;
+    border: 2px solid #7dc6df;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    width: fit-content;
+    margin: 20px auto 0;
+    margin-bottom: 10px;
+}
+
+.about-area button:hover {
+    background-color: rgb(15, 15, 124);
+    color: white;
+}
+
+/*======================== Gallery Area ======================*/
+
+.gallery-area {
+    display: flex;
+    align-items: top;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery-area h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.gallery-area p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 0px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-container h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.grid-container p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.grid-container button {
+    background-color: lightblue;
+    color: black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50px;
+}
+
+.gallery-area button:hover {
+    background-color: lightcyan;
+}
+
+.gallery-area img{
+    max-width: 100%;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+/*===================== Contact Area ===========================*/
+
+.contact-area {
+    display: flex;
+    background: url(../Assets/background_2.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+.contact-area h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+}
+
+.contact-area p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.contact-area form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.contact-area label {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.contact-area input {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-bottom: 4px solid #2233d3;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+.no-arrows::-webkit-outer-spin-button,
+.no-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contact-area textarea{
+    resize: none;
+    font-size: 18px;
+    padding: 10px 10px 50px 10px;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-bottom: 4px solid #2233d3;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-area button {
+    padding: 8px 16px;
+    background-color: rgb(26, 26, 228);
+    color: white;
+    border: 2px solid #7dc6df;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    width: fit-content;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-area button:hover {
+    background-color: rgb(15, 15, 124);
+    color: white;
+}
+
+/*========================= lower area ====================================*/
+
+.lower-area-imgs {
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-style: solid none;
+    border-color: black;
+    margin: 0 auto;
+}
+
+.lower-area-imgs img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    flex-shrink: 0;
+    padding: 30px;
+}
+
+.lower-area-credit {
+    display: flex;
+    background-color: black;
+    color: white;
+    text-align: left;
+    flex-direction: column;
+    align-items: top;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.lower-area-credit p {
+    margin-left: 20px;
+}
+
+/*===================================================================================*/
+/*media breakpoint at 800px:*/
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .nav-left {
+        margin-bottom: 10px;
+    }
+
+    .nav-right {
+        flex-direction: column;
+        gap: 0px;
+        font-size: 3vw;
+    }
+
+    .nav-right a {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .nav-left p {
+        font-size: 20px;
+    }
+
+    .opening-area {
+        padding: 0px;
+        text-align: left;
+    }
+
+    .opening-area h1 {
+        font-size: 28px;
+    }
+
+    .opening-area p {
+        font-size: 3vw;
+    }
+
+    .about-area h1 {
+        font-size: 28px;
+    }
+
+    .about-area p {
+        font-size: 3vw;
+    }
+
+    .contact-area h1 {
+        font-size: 28px;
+    }
+
+    .contact-area p {
+        font-size: 3vw;
+    }
+
+    .contact-area label {
+        font-size: 3vw;
+    }
+    .contact-area input {
+        max-width: 50vw;
+    }
+    
+    .contact-area textarea {
+        max-width: 50vw;
+    }
+
+    .lower-area-imgs img {
+        max-width: 10vh;
+        max-height: 5vh;
+        padding: 0px; 
+    }
+}

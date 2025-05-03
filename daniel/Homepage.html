@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="Style/Style_Homepage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="Assets/logo_cat.png" alt="CatLogo">
+            <P>Daniel</P>
+        </div>
+        <div class="nav-right">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="opening-area" id="home">
+        <div class="opening-area-content">
+            <h1>With code, we rise.</h1>
+            <p>My website project: this is my home page where you can navigate to the rest of the project. </p>
+            <p>Enjoy and have a good day!</p>     
+        </div>
+    </section>
+
+    <div class="opening-area-imgs">
+        <img src="Assets/logo_1.png" alt="logo">
+        <img src="Assets/logo_2.png" alt="logo">
+        <img src="Assets/logo_3.jpg" alt="logo">
+        <img src="Assets/logo_4.jpg" alt="logo">
+        <img src="Assets/logo_5.png" alt="logo">
+    </div>
+
+    <section class="about-area" id="about">
+        <img src="Assets/img_me.png" alt="Daniel">
+        <h1>About me</h1>
+        <p> My name is Daniel an am web developer, what is web developer? </p> <br>
+        <p>
+            A web developer is a professional responsible for designing, coding, and maintaining websites and web applications. They
+            utilize various programming languages such as HTML, CSS, JavaScript, and backend technologies like PHP, Python, or Ruby
+            to build functional, user-friendly, and visually appealing online platforms. Web developers work closely with designers,
+            content creators, and clients to ensure the website meets specific goals and provides a seamless user experience. Their
+            role is crucial in today’s digital world, where a strong online presence can significantly impact a business’s success
+            and reach.
+        </p>
+        <button id="btn_resume">Resume</button>
+    </section>
+
+    <section class="gallery-area" id="gallery">
+        <h1>Projects:</h1>
+        <p>Here we have all the projects, click them to enter them.</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="Assets/preview_1.png">
+                <h1>webproject one</h1>
+                <p>this is the first project</p>
+                <button id="btn_P1">click to see</button>
+            </div>
+            <div class="grid-item">
+                <img src="Assets/preview_2.png">
+                <h1>webproject one</h1>
+                <p>this is the first project</p>
+                <button id="btn_P2">click to see</button>
+            </div>
+            <div class="grid-item">
+                <img src="Assets/preview_3.png">
+                <h1>webproject one</h1>
+                <p>this is the first project</p>
+                <button id="btn_P3">click to see</button>
+            </div>
+            <div class="grid-item">
+                <img src="Assets/preview_4.png">
+                <h1>webproject one</h1>
+                <p>this is the first project</p>
+                <button id="btn_P4">click to see</button>
+            </div>
+            <div class="grid-item">
+                <img src="Assets/preview_5.png">
+                <h1>webproject one</h1>
+                <p>this is the first project</p>
+                <button id="btn_P5">click to see</button>
+            </div>
+            <div class="grid-item">
+                <img src="Assets/preview_6.png">
+                <h1>webproject one</h1>
+                <p>this is the first project</p>
+                <button id="btn_P6">click to see</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-area" id="contact">
+        <h1>Contact us</h1>
+        <p>For more information, you can leave your contact information.</p>
+
+        <form id="from-contact">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name" 
+        minlength="1" maxlength="15" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email" 
+        minlength="5" maxlength="20" required>
+
+        <label for="phoneNum">Phone Number:</label>
+        <input type="number" class="no-arrows" id="phoneNum" placeholder="enter your phone number" 
+        minlength="10" maxlength="10" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message"></textarea>
+
+        <button type="submit" id="btn_send">Send</button>
+        </form>
+    </section>
+    
+    <div class="lower-area-imgs">
+        <a href=""><img src="Assets/logo_6.png" alt="logo"></a>
+        <a href=""><img src="Assets/logo_7.png" alt="logo"></a>
+        <a href=""><img src="Assets/logo_8.png" alt="logo"></a>
+        <a href=""><img src="Assets/logo_9.png" alt="logo"></a>
+    </div>
+    <div class="lower-area-credit">
+        <p>all copyrights reserved. created by daniel</p>
+    </div>
+
+
+<script src="Script/Script_Homepage.js"></script>
+</body>
+</html>
